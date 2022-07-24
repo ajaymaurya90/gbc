@@ -8,6 +8,9 @@
 return [
     false, // $matchHost
     [ // $staticRoutes
+        '/' => [[['_route' => 'main_page', '_controller' => 'App\\Controller\\FrontController::index'], null, null, null, false, false, null]],
+        '/video-list' => [[['_route' => 'video_list', '_controller' => 'App\\Controller\\FrontController::videoList'], null, null, null, false, false, null]],
+        '/video-details' => [[['_route' => 'video_details', '_controller' => 'App\\Controller\\FrontController::videoDetails'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
